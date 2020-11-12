@@ -11,12 +11,8 @@ var myArray = ['Michele', 'Fabio', 'Roberto', 'Giovanni', 'Simone', 'Chiara'];
 let scelta = prompt(`Inserisci un numero tra 0 e ${myArray.length - 1}`)
 let scelta2 = prompt(`Inserisci un altro numero tra ${scelta} e ${myArray.length - 1}`)
 
-
 const userArray = myArray.filter((element,index) => {
-   if(index >= scelta && index <= scelta2){
-      return element;
-   }
+   return (index >= scelta) && (index <= scelta2)
 })
-
 
 console.log(userArray);
